@@ -108,7 +108,6 @@ async def get_recommendation(X: X):
     top_n = 2000
     top_indices = np.argsort(similarities[0])[::-1][:top_n]  
     top_movie_ids = movie_ids[top_indices]
-    print(type(top_movie_ids))
 
     # return the recommendation array
     recommendation_list = top_movie_ids.tolist()
