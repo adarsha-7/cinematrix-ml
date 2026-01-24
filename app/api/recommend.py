@@ -35,9 +35,8 @@ async def get_recommendation(X: X):
 
     # keeping the most important interaction for each movie
     priority = {
-        "RATED": 4,
-        "WATCHLIST": 3,
-        "SEARCH": 2,
+        "RATED": 3,
+        "WATCHLIST": 2,
         "CLICK": 1
     }
 
@@ -69,8 +68,7 @@ async def get_recommendation(X: X):
     base_weights = {
         "RATED": 2.5,
         "WATCHLIST": 1.0,
-        "SEARCH": 0.5,
-        "CLICK": 0.25
+        "CLICK": 0.5
     }
 
     def interaction_weight(interaction):
