@@ -9,7 +9,7 @@ app.add_middleware(
     allow_origins=["http://localhost:3000", 
                    "https://cinematrix.adarshaghimire.com.np"],
     allow_credentials=True,
-    allow_methods=["POST"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
