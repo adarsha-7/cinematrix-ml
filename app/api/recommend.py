@@ -88,8 +88,10 @@ async def get_recommendation(X: X):
         if weight == 0:
             continue
 
+        # multiplying the movie vector with the weight of its interaction
         movie_vector = movie_feature_vectors[idx] * weight
 
+        # calculating resultant user vector based on every interaction
         if user_vector is None:
             user_vector = movie_vector
         else:
@@ -97,6 +99,8 @@ async def get_recommendation(X: X):
 
         total_weight += weight
 
+    
+    # preserving the magnitude
     if user_vector is not None and total_weight > 0:
         user_vector = user_vector / total_weight
 
