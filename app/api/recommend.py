@@ -21,7 +21,7 @@ async def get_recommendation(X: X):
     userId = X.userId
 
     # fetching interactions of the user and movie vectors
-    query = f'SELECT * FROM "UserInteractionMovies" where "userId" = \'{userId}\''
+    query = f'SELECT * FROM "UserInteractionMovies" WHERE "userId" = \'{userId}\''
     interactions_df = pd.read_sql(query, engine)
     interactions = interactions_df.to_dict(orient="records")
 
