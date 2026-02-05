@@ -182,20 +182,6 @@ POST /recommend
 
 ---
 
-## 📂 Repository Structure
-
-```
-cinematrix-ml/
-├── notebooks/        # Data processing & feature engineering
-├── data/             # Precomputed vectors & metadata
-├── api/              # FastAPI routes & logic
-├── core/             # Security & utilities
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## 🔐 Security Considerations
 
 * API access restricted via environment-based secret key
@@ -220,3 +206,4 @@ This repository encapsulates the **entire intelligence layer** of Cinematrix. It
 ---
 
 📌 *Cinematrix ML — Efficient recommendations, purpose-built.*
+
